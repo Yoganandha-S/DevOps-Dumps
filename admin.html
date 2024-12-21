@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - DevOps Study App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Page</h1>
+    <p>Use this page to add or edit content for the study app.</p>
+  </header>
+  <main>
+    <form id="admin-form">
+      <label for="topic">Topic Name:</label>
+      <input type="text" id="topic" placeholder="Enter topic name" required>
+
+      <label for="content">Content:</label>
+      <textarea id="content" placeholder="Enter topic content" required></textarea>
+
+      <button type="button" id="preview-btn">Preview</button>
+      <button type="submit">Save</button>
+    </form>
+
+    <section id="preview-section">
+      <h2>Preview</h2>
+      <div id="preview-content"></div>
+    </section>
+
+    <section id="saved-topics">
+      <h2>Saved Topics</h2>
+      <ul id="topics-list"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
